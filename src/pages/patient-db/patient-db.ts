@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams, ModalController, Platform, ViewCon
 import { AngularFireDatabase } from 'angularfire2/database';
 import { FirebaseListObservable } from 'angularfire2/database-deprecated';
 import { FirebaseProvider } from '../../providers/firebase';
+import { PatientInfoPage } from '../patient-info/patient-info';
+
 
 @IonicPage()
 @Component({
@@ -33,6 +35,13 @@ export class PatientDBPage {
     let modal = this.modalCtrl.create(ModalContentPage, {patient2go: patient})
     modal.present();
   }
+
+  changePage(patient){
+    this.navCtrl.push(PatientInfoPage, {
+      patient: patient
+    });
+  }
+
 
   getPatients(ev) {
       this.initializeData();

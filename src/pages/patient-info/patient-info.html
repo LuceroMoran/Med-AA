@@ -1,0 +1,65 @@
+<!--
+  Generated template for the PatientInfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>{{patient.name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title text-center>
+        Nombre: {{patient.name}}<br>
+      </ion-card-title>
+
+      <ion-list>
+        <ion-list-header>
+        <h1>  Datos personales</h1>
+        </ion-list-header>
+        <ion-item>Nombre(s): {{patient.name}}</ion-item>
+        <ion-item>Apellidos: {{patient.lastname}}</ion-item>
+        <ion-item>Genero: {{patient.gender}}</ion-item>
+        <ion-item>Fecha de nacimiento: {{patient.birth}}</ion-item>
+        <ion-item>No. de Seguro Médico: {{patient.insurance}}</ion-item>
+        <ion-item>Dirección: {{patient.address}}</ion-item>
+        <ion-item>Codigo postal: {{patient.cp}}</ion-item>
+        <ion-item>Ciudad: {{patient.city}}</ion-item>
+        <ion-item>Telefono: {{patient.tel}}</ion-item>
+        <ion-item>Celular: {{patient.cel}}</ion-item>
+        <ion-item>E-Mail: {{patient.email}}</ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-list-header>
+          <h1>Datos médicos</h1>
+        </ion-list-header>
+        <ion-item>Tipo de sangre:{{patient.blood}}</ion-item>
+        <ion-item>Alergias a medicamentos: {{patient.Mallergic}}</ion-item>
+        <ion-item>Otras alergias: {{patient.Oallergic}}</ion-item>
+        <ion-item>Medicamentos: {{patient.medicament}}</ion-item>
+        <ion-item>Intervenciones quirurgicas: {{patient.surgeries}}</ion-item>
+        <ion-item>Patologias: {{patient.pathology}}</ion-item>
+        <ion-item></ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-list-header>
+          <h1>Consulta</h1>
+        </ion-list-header>
+        <ion-item>Edad: {{patient.age}}</ion-item>
+        <ion-item>Peso: {{patient.weight}}Kg</ion-item>
+        <ion-item>Estatura: {{patient.height}}cm</ion-item>
+        <ion-item rows="4">Motivo de consulta: <br> {{patient.cons}}</ion-item>
+        <ion-item rows="4">Sintomas: <br> {{patient.symptom}}</ion-item>
+        <ion-item>Temperatura: {{patient.temperature}}</ion-item>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>patientDB</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Pacientes</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -16,8 +16,8 @@
 <ion-content>
   <ion-searchbar (ionInput)="getPatients($event)"></ion-searchbar>
   <ion-list>
-    <button ion-item *ngFor="let patient of filterI" (click)="viewPatient(patient)">
-      {{ patient.name }}
+    <button ion-item *ngFor="let patient of filterI" (click)="changePage(patient)">
+      {{ patient.name }} {{patient.lastname}}
     </button>
   </ion-list>
 </ion-content>

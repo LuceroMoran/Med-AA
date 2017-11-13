@@ -9,6 +9,7 @@ import { PatientDBPage } from '../pages/patient-db/patient-db'
 import { MakeAppointmentPage } from '../pages/make-appointment/make-appointment'
 import { RegPatientPage } from '../pages/reg-patient/reg-patient'
 import { ModalContentPage } from '../pages/patient-db/patient-db'
+import { PatientInfoPage } from '../pages/patient-info/patient-info'
 //import { PostService } from '../providers/post-service';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -38,7 +39,8 @@ export const firebaseConfig = {
     PatientDBPage,
     ModalContentPage,
     MakeAppointmentPage,
-    RegPatientPage
+    RegPatientPage,
+    PatientInfoPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,8 @@ export const firebaseConfig = {
     PatientDBPage,
     ModalContentPage,
     MakeAppointmentPage,
-    RegPatientPage
+    RegPatientPage,
+    PatientInfoPage
   ],
   providers: [
     FirebaseProvider,
